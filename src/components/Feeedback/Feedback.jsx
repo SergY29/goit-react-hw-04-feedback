@@ -12,6 +12,16 @@ export class Feedback extends Component {
     this.setState(prevState => ({ [name]: prevState[name] + 1 }));
   };
 
+  // countTotalFeedback = () => {
+  //   let sum = 0;
+  //   console.log(this.state);
+  //   for (let value of Object.values(this.state)) {
+  //     sum += value;
+  //   }
+
+  //   return sum;
+  // };
+
   render() {
     const feedbacks = Object.keys(this.state);
     return (
