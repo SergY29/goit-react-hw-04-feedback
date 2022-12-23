@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { Sec } from './Section.styled';
 
 export const Section = ({ title, children }) => {
@@ -8,4 +8,9 @@ export const Section = ({ title, children }) => {
       {children}
     </Sec>
   );
+};
+
+Section.propTypes = {
+  title: PropTypes.string,
+  children: PropTypes.object,
 };
